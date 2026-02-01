@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+     *{
+            margin:10px;
+            
+        }
+      body
+      {
+            background-color: rgb(221, 210, 210);
+           box-sizing: border-box;
+            justify-content: center;
+          align-items: center;
+         
+  }
+  h3{
+    
+    animation-play-state: paused 40s;
+    animation: zoomIn 2s ease;
+  }
+
+   header.h
+   {
+      background-color:rgb(65, 114, 154); 
+       display: flex;
+       color:rgb(245, 244, 242);
+       justify-content: space-between;
+       font-size:2.2ch;
+       padding-bottom:0.5cm;
+       margin:1.5px;
+      
+   }
+    nav a:hover{
+        background-color: rgb(180, 202, 223);
+        border-radius: 4px;
+   }
+   .abc
+   {
+        background-color: rgb(237, 233, 227);
+        width: 550px;
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        padding: 10px;
+        margin: 20px auto;
+       animation: slideLeft 1s ease;
+
+        
+   }
+   .ce
+   {
+         background: #2f95d3;
+        color:rgb(249, 249, 244);
+        padding: 15px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+   }
+   .ce h3
+   {
+        text-align: center;
+   }
+   .ce p{
+        text-align: center;
+   }
+   .info2
+   {
+    animation:float 5s infinite;
+   }
+   @keyframes float {
+    0% {
+        transform: translateY(1px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+     footer
+    {
+            text-align: center;
+            color:azure;
+            background-color:rgb(19, 52, 79); 
+            padding:7px;
+            margin-top:2%;
+        
+    }
+    footer a
+    {
+        color:rgb(171, 90, 90);
+    }
+     button{
+        background-color:  #0f74b2;
+        border-radius:3px;
+        color:aliceblue;
+        width:400px;
+        height: 30px;
+        justify-content: center;
+        margin-left:50px;
+        animation: zoomIn 2s ease;
+    }
+     @keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body>
+      <header class="h">
+            <header>&#128214;&nbsp;&nbsp;LearnHub</header>
+            
+            <nav >
+                <a href="ind.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="enrolment.html">Enroll</a>
+                <a href="contact.html">Contact</a>
+            </nav> 
+        </header>
+        <section  class="abc">
+            <div class="ce">
+                <h3 >Course Enrolment</h3>
+                <p>Enroll in your desired courses and start learning today!</p>
+   
+            </div>
+
+            <div class="detail">
+                <div class="info1">
+            <fieldset>
+                <legend>&#128221; Personal Information</legend>
+
+                <form>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <lable for="Phone Number">Phone Number:</lable><br>
+                    <input type="tel" id="phone" name="phone" required><br>
+
+                    <label for="Date of Birth">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob" required><br></fieldset>
+
+
+            </div>
+            <div class="info2">
+                <fieldset>
+                
+                <legend> &#127891; Educational Background </legend>
+                    <label for="highestqual">Highest Qualification:</label><br>
+                    <input type="text" id="highestqual" name="highestqual" required><br>
+
+                    <label for="Do you have any programing experience?">Do you have any programming experience?</label><br>
+                    <input type="radio" name="yes"> Yes
+                    <input type="radio" name="yes" > No<br><br></fieldset>
+            </div>
+
+            <div class="info3">
+                <fieldset>
+                 <legend> &#128214; Course Selection </legend>
+
+                    <label for="course">Select Course:</label><br>
+                    <select id="course" name="course" required>
+                        <option value="">Choose a cource</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="datasci">Data Science</option>
+                        <option value="graphicdesign">Graphic Design</option>
+                        <option value="digitalmarketing">Digital Marketing</option>
+                    </select><br><br>
+
+                   <label for="Why do you want to take this course?">Why do you want to take this course?</label><br>
+                    <textarea  rows="4" cols="50" placeholder="Tell us about your goals"></textarea><br><br></fieldset>
+                </div>
+
+                    <label for="agree"> <input type="checkbox" id="agree" name="agree" required> I agree to the Term & Conditions and Privacy Policy.</label><br><br>
+
+                    
+                    <button>Complete Enrollment</button>
+                </form>
+         
+</div>
+ </section>
+    <footer>
+                <p>&copy;2026 LearnHub. All rigths reserved.</p>
+                Email:
+                <a href="mailto:info@learnhub.com">info@learnhub.com </a>|phone +91 8160942660
+                
+            </footer>
+               
+ </body>
+ </html>
+       
