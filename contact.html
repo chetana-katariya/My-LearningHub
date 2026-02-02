@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    
     <style>
      *{
             margin:10px;
             
-        }
+      }
       body
       {
-            background-color: rgb(221, 210, 210);
-           box-sizing: border-box;
+            background-color: rgb(185, 182, 182);
+            box-sizing: border-box;
             justify-content: center;
-          align-items: center;
+            align-items: center;
          
-  }
- header.h
+    }
+  header.h
    {
-      background-color:rgb(65, 114, 154); 
+       background-color:rgb(43, 44, 44); 
        display: flex;
        color:rgb(245, 244, 242);
        justify-content: space-between;
@@ -27,76 +25,82 @@
        margin:1px;
       
    }
-    nav a:hover{
-        background-color: rgb(180, 202, 223);
+   nav a
+   {
+       color: aliceblue;
+   }
+    nav a:hover
+      {
+        background-color: rgb(116, 172, 224);
         border-radius: 4px;
        
    }
-   main{
-
-      display: flex;
-     justify-content: center;
-     gap: 50px;
-     padding: 40px;
+   main
+   {
+       display: flex;
+       justify-content: center;
+       gap: 50px;
+       padding: 40px;
    }
-   .xyz {
-  width:400px;
-  height:600px;           
-  background: #f3efe9;
-  border: 2px solid #1c3a57;
-  border-radius: 12px;
-  padding:30px;
-  box-sizing: border-box;
-  margin:10px;
-  animation: slideBottom 1.5s ease;
-}
+   .xyz
+   {
+
+        width:400px;
+        height:600px;           
+        background: #9b9a98;
+        box-shadow: 2 8px 12px rgba(0,0,0,0.15);
+        border-radius: 12px;
+        padding:30px;
+        box-sizing: border-box;
+        margin:10px;
+        animation: slideBottom 1.5s ease;
+   }
    .mail
    {
-    background-color: rgb(201, 206, 209);
-    border-radius: 5px;
+          background-color: rgb(214, 217, 220);
+          border-radius: 5px; 
    }
    .phone
    {
-    background-color: rgb(201, 206, 209);
-    border-radius: 5px;
+          background-color: rgb(216, 218, 220);
+          border-radius: 5px;
    }
    .title
    {
-    
-      font-size:30px;
-      animation: zoomIn 2.5s ease;
+         font-size:30px;
+          animation: zoomIn 2.5s ease;
+          color:#151414
    }
     .address
     {
-      background-color: rgb(201, 206, 209);
-      border-radius: 5px;
+         background-color: rgb(218, 220, 222);
+         border-radius: 5px;
     }
     .hours
     {
-      background-color: rgb(201, 206, 209);
-      border-radius: 5px;
+         background-color: rgb(216, 221, 225);
+         border-radius: 5px;
+         margin-bottom: 3px;
     }
    button
    {
-        background-color: rgb(65, 114, 154);
-        color: white;
-        padding: 10px 20px;
-        justify-content: center;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        animation: zoomIn 1.5s ease;
+          font-size: 12px;
+         background-color: rgb(56, 56, 57);
+         color: white;
+         padding: 10px 20px;
+         justify-content: center;
+         border-radius: 4px;
+         cursor: pointer;
+         animation: zoomIn 1.5s ease;
    }
    button:hover
    {
-        background-color: rgb(11, 117, 224);
+        background-color: rgb(61, 95, 130);
    }
-   
      footer
     {
-            
             color:azure;
-            background-color:rgb(19, 52, 79); 
+            background-color:rgb(55, 54, 54);
             padding:20px;
             margin-top:2%;
             text-align: center;
@@ -104,7 +108,7 @@
     }
     footer a
     {
-        color:rgb(171, 90, 90);
+         color:rgb(171, 90, 90);
     }
      @keyframes zoomIn {
     from {
@@ -125,6 +129,7 @@
         transform: translateY(10px);
         opacity: 1;
     }
+}
 
    </style>
 </head>
@@ -133,7 +138,7 @@
         <header class="h">
             <header>&#128214;&nbsp;&nbsp;LearnHub</header>
             
-            <nav >
+            <nav>
                  <a href="index.html">Home</a>
                 <a href="courses.html">Courses</a>
                 <a href="enrolment.html">Enroll</a>
@@ -148,24 +153,24 @@
                            to hear from you send 
                            us a message and wo'll
                          respond as soon as
-                          possible.
+                          possible.<br>
                       </p> 
               
-                 <div class="mail">
+                 <div class="mail"><br>
                  <label for="email">&#9993; Email</label><br>
                   <a href="mailto:ahir36183@gmail.com">ahir36183@gmail.com</a><br><br></div>
 
-                  <div class="phone">
+                  <div class="phone"><br>
                   <label for="phone">&#128222; Phone</label><br>
                   <a href="tel:+91 8160942660">+91 8160942660 </a><br><br></div>
 
-                  <div class="address">
+                  <div class="address"><br>
                   <label for="address">&#128205; Address</label><br>
                   <p>Lambe Hanuman,<br>
                     sardarnagar,<br>
                     bhavnagar-364002</p><br></div>
 
-                    <div class="hours">
+                    <div class="hours"><br>
                     <label for="business Hours">&#9200; Business Hours</label><br>
                     <p>Monday-saturday: 9:00 AM - 12:00 PM</p></div>
                     
@@ -185,7 +190,7 @@
                 
                 <label for="subject">Subject:</label><br>
                   <select id="subject" name="subject">
-                    <options value="">Select a Subject</option>
+                    <option value="">Select a Subject</option>
                     <option value="general">General Inquiry</option>
                     <option value="support">Support</option>
                     <option value="feedback">Feedback</option>
@@ -200,7 +205,8 @@
                 </div>
             </form> 
                   
-</main>
+        </main>
+
          <footer>
           <center>
                 <p>&copy;2026 LearnHub. All rigths reserved.</p>
@@ -208,10 +214,6 @@
                 <a href="mailto:info@learnhub.com">info@learnhub.com </a>|phone +91 8160942660
                 </center>
             </footer>
-               
-
+              
 </body>
 </html>
-        
-
-
